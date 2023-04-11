@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e991b119cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container"> 
+            <nav>
+                <img src="logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Yashica</span> Garg</h1><br>
+                <p>I am a Computer Science Student who is looking forward to work with you.I am good at <span class="skill-front">DSA</span> ,<span class="skill-front"> C++</span> and <span class="skill-front">Full stack Web
+                    Development.</span> I love solving problems and exploring more.</p>
+                <button class="btn" onclick="location.href='documents/Resume.pdf';">Download CV</button>
+            </div>
+                
+        </div>
+    </div>
+    <!--------------about--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/mine.jpeg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Skills</span><br>Designing</li>
+                            <li><span>Skills</span><br>Designing</li>
+                            <li><span>Skills</span><br>Designing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>intern</span><br>Designing</li>
+                            <li><span>intern</span><br>Designing</li>
+                            <li><span>intern</span><br>Designing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>education</span><br>Designing</li>
+                            <li><span>education</span><br>Designing</li>
+                            <li><span>education</span><br>Designing</li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- ---------services--------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit molestiae ut consequuntur, similique alias facere nulla ipsa inventore quod accusamus.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit molestiae ut consequuntur, similique alias facere nulla ipsa inventore quod accusamus.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit molestiae ut consequuntur, similique alias facere nulla ipsa inventore quod accusamus.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------portfolio------ -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>WALLET WATCHER </h3>
+                        <p>An expense management system website is an essential tool for businesses and individuals to track and manage their expenses efficiently. This is a full-stack web development project. It uses technologies such as MongoDb, Express.js, React and Node.js.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>CHEST-NET</h3>
+                        <p>Custom DENSENET 121 model to classify CHEST-XRAYS as fit and sick. Developed a web application using flask to utilize model weights and give outputs in a presentable format. Used Transfer learning and weight balancing techniques.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+        
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>MovieCorn</h3>
+                        <p>This is a movie web application frontend, in which we have interface that allows users to browse, search and view information about movies. The frontend is developed using modern web technologies such as HTML, CSS, and JavaScript.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div> 
+            </div>
+            <a href="#" class="btn2">See more</a>
+        </div>
+    </div>
+    <!-- --------contact------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>yashicagarg32gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7898303198</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+       var tablinks= document.getElementsByClassName("tab-links");
+       var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById (tabname).classList.add("active-tab");
+            
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
